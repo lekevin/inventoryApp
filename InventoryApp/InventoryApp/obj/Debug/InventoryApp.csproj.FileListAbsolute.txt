@@ -10,3 +10,21 @@ C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj
 C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
 C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
 C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.ManageUsers.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe.config
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.pdb
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.AssemblyReference.cache
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Home.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Login.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.ManageUsers.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Manufacturers.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Orders.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Payments.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Products.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.cache
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
+C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Splashform.resources

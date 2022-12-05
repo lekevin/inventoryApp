@@ -24,12 +24,19 @@ namespace InventoryApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Home prod = new Home();
+            prod.Show();
+            this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

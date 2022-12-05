@@ -26,5 +26,12 @@ namespace InventoryApp
         {
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Home prod = new Home();
+            prod.Show();
+            this.Hide();
+        }
     }
 }

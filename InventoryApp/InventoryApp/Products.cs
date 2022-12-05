@@ -44,7 +44,9 @@ namespace InventoryApp
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Home prod = new Home();
+            prod.Show();
+            this.Hide();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
