@@ -1,0 +1,12 @@
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe.config
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.pdb
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.AssemblyReference.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Form1.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.ManageUsers.resources
