@@ -41,6 +41,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,7 +128,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(59)))));
-            this.button1.Location = new System.Drawing.Point(72, 457);
+            this.button1.Location = new System.Drawing.Point(100, 392);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(251, 45);
             this.button1.TabIndex = 12;
@@ -139,7 +140,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(124)))));
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(59)))));
-            this.button2.Location = new System.Drawing.Point(72, 521);
+            this.button2.Location = new System.Drawing.Point(100, 456);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(251, 45);
             this.button2.TabIndex = 13;
@@ -151,7 +152,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(132)))), ((int)(((byte)(124)))));
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(59)))));
-            this.button3.Location = new System.Drawing.Point(71, 584);
+            this.button3.Location = new System.Drawing.Point(99, 519);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(251, 45);
             this.button3.TabIndex = 14;
@@ -161,9 +162,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(206)))), ((int)(((byte)(168)))));
-            this.panel2.Location = new System.Drawing.Point(578, 145);
+            this.panel2.Location = new System.Drawing.Point(578, 172);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(710, 519);
+            this.panel2.Size = new System.Drawing.Size(710, 492);
             this.panel2.TabIndex = 16;
             // 
             // button4
@@ -172,7 +173,7 @@
             this.button4.Cursor = System.Windows.Forms.Cursors.No;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(59)))));
-            this.button4.Location = new System.Drawing.Point(72, 652);
+            this.button4.Location = new System.Drawing.Point(100, 587);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(251, 45);
             this.button4.TabIndex = 17;
@@ -192,12 +193,24 @@
             this.label5.Text = "X";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(59)))));
+            this.label6.Location = new System.Drawing.Point(872, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 30);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "User List";
+            // 
             // ManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(184)))), ((int)(((byte)(152)))));
             this.ClientSize = new System.Drawing.Size(1361, 709);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
@@ -234,5 +247,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label6;
     }
 }
