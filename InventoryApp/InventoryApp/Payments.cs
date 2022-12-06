@@ -20,37 +20,27 @@ namespace InventoryApp
         //string cs = @"URI=file"+Application.StartupPath+"\\database.db";
 
         SQLiteDataReader dr;
-
+        SQLiteCommand cmd;
+        SQLiteConnection con;
         public Payments()
+        {
+            InitializeComponent();
+        }
+
+        private void data_show()
         {
             var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
             con.Open();
 
-            string stm = "SELECT * FROM PAYMENT";
+            string stm = "SELECT payCardHolder, payCardNo, payCardCVV, ordID FROM PAYMENT";
             var cmd = new SQLiteCommand(stm, con);
             dr = cmd.ExecuteReader();
 
             while (dr.Read())
             {
-                dataGridView1.Rows.Insert(0, dr.GetString(0), dr.GetString(1));
+                dataGridView1.Rows.Insert(0,dr.GetString(0),dr.GetString(1),dr.GetInt32(2),dr.GetInt32(3));
             }
-
-            InitializeComponent();
         }
-        //private void data_show()
-        //{
-        //    var con = new SQLiteConnection(cs);
-        //    con.Open();
-
-        //    string stm = "SELECT * FROM PAYMENT";
-        //    var cmd = new SQLiteCommand(stm, con);
-        //    dr = cmd.ExecuteReader();
-
-        //    while(dr.Read())
-        //    {
-        //        dataGridView1.Rows.Insert(0, dr.GetString(0), dr.GetString(1));
-        //    }
-        //}
 
         //private void Create_db()
         //{
@@ -99,7 +89,7 @@ namespace InventoryApp
 
         private void Payments_Load(object sender, EventArgs e)
         {
-
+            data_show();
         }
     }
 }
