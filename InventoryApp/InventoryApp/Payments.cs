@@ -77,10 +77,10 @@ namespace InventoryApp
             cmd.Parameters.AddWithValue("@ordID", ORD);
 
             dataGridView1.ColumnCount = 4;
-            dataGridView1.Columns[0].Name = "Card Holder";
-            dataGridView1.Columns[1].Name = "Card Number";
+            dataGridView1.Columns[0].Name = "CardHolder";
+            dataGridView1.Columns[1].Name = "CardNumber";
             dataGridView1.Columns[2].Name = "CVV";
-            dataGridView1.Columns[3].Name = "Order ID";
+            dataGridView1.Columns[3].Name = "OrderID";
 
             string[] row = new string[] { HOLDER, NUM, CVV, ORD };
             dataGridView1.Rows.Add(row);
@@ -94,6 +94,40 @@ namespace InventoryApp
 
         private void Payments_Load(object sender, EventArgs e)
         {
+            data_show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
+
+            var cmd = new SQLiteCommand(con);
+
+            cmd.CommandText = "UPDATE PAYMENT Set payCardHolder=@CardHolder, payCardNo=@CardNumber, payCardCVV=@CVV WHERE ordID=@OrderID";
+            cmd.Parameters.AddWithValue("@CardHolder", textBox1.Text);
+            cmd.Parameters.AddWithValue("@CardNumber", textBox2.Text);
+            cmd.Parameters.AddWithValue("@CVV", textBox3.Text);
+            cmd.Parameters.AddWithValue("@OrderID", textBox4.Text);
+
+            cmd.ExecuteNonQuery();
+            dataGridView1.Rows.Clear();
+            data_show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
+
+            var cmd = new SQLiteCommand(con);
+
+            cmd.CommandText = "DELETE FROM PAYMENT WHERE ordID=@OrderID";
+            cmd.Prepare();
+            cmd.Parameters.AddWithValue("@OrderID", textBox4.Text);
+
+            cmd.ExecuteNonQuery();
+            dataGridView1.Rows.Clear();
             data_show();
         }
     }

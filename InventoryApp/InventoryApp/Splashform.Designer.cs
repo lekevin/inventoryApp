@@ -40,11 +40,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
             this.label1.Location = new System.Drawing.Point(145, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(504, 39);
+            this.label1.Size = new System.Drawing.Size(455, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Inventory Management System";
             // 
@@ -54,6 +54,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(455, 48);
             this.progressBar1.TabIndex = 1;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // label2
             // 
@@ -73,11 +74,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(54)))), ((int)(((byte)(59)))));
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(184)))), ((int)(((byte)(152)))));
             this.label5.Location = new System.Drawing.Point(769, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 21);
+            this.label5.Size = new System.Drawing.Size(20, 20);
             this.label5.TabIndex = 20;
             this.label5.Text = "X";
             this.label5.Click += new System.EventHandler(this.label5_Click);
