@@ -170,7 +170,7 @@ namespace InventoryApp
             cmd.Parameters.AddWithValue("@ProductID", textBox1.Text);
             cmd.Parameters.AddWithValue("@ProductType", textBox2.Text);
             cmd.Parameters.AddWithValue("@ProductModel", textBox3.Text);
-            cmd.Parameters.AddWithValue("@ProductType", textBox4.Text);
+            cmd.Parameters.AddWithValue("@ProductPrice", textBox4.Text);
             cmd.Parameters.AddWithValue("@ManufacturerID", textBox5.Text);
 
             cmd.ExecuteNonQuery();
