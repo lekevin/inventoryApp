@@ -32,36 +32,15 @@ namespace InventoryApp
             var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
             con.Open();
 
-            string stm = "SELECT payCardHolder, payCardNo, payCardCVV, ordID FROM PAYMENT";
+            string stm = "SELECT * FROM PAYMENT";
             var cmd = new SQLiteCommand(stm, con);
             dr = cmd.ExecuteReader();
 
             while (dr.Read())
             {
-                dataGridView1.Rows.Insert(0,dr.GetString(0),dr.GetString(1),dr.GetInt32(2),dr.GetInt32(3));
+                dataGridView1.Rows.Insert(0,dr.GetString(0),dr.GetString(1),dr.GetString(2),dr.GetString(3));
             }
         }
-
-        //private void Create_db()
-        //{
-        //    if (!System.IO.File.Exists(path))
-        //    {
-        //        SQLiteConnection.CreateFile(path);
-        //        using (var sqlite = new SQLiteConnection(@"Data Source=" + path))
-        //        {
-        //            sqlite.Open();
-        //            string sql = "CREATE TABLE Products(prodID INTEGER NOT NULL PRIMARY KEY, prodType TEXT NOT NULL, prodModel TEXT NOT NULL, prodPrice REAL NOT NULL, manID INTEGER NOT NULL, FOREIGN KEY (manID) REFERENCES MANUFACTURER(mID))";
-        //            SQLiteCommand command = new SQLiteCommand(sql, sqlite);
-        //            command.ExecuteNonQuery();
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Error");
-        //        return;
-        //    }
-        //}
-
         private void label5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -81,6 +60,32 @@ namespace InventoryApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
+            var cmd = new SQLiteCommand(con);
+
+            cmd.CommandText = "INSERT INTO PAYMENT(payCardHolder, payCardNo, payCardCVV, ordID) VALUES (@payCardHolder, @payCardNo, @payCardCVV, @ordID)";
+
+            string HOLDER = textBox1.Text;
+            string NUM = textBox2.Text;
+            string CVV = textBox3.Text;
+            string ORD = textBox4.Text;
+
+            cmd.Parameters.AddWithValue("@payCardHolder", HOLDER);
+            cmd.Parameters.AddWithValue("@payCardNo", NUM);
+            cmd.Parameters.AddWithValue("@payCardCVV", CVV);
+            cmd.Parameters.AddWithValue("@ordID", ORD);
+
+            dataGridView1.ColumnCount = 4;
+            dataGridView1.Columns[0].Name = "Card Holder";
+            dataGridView1.Columns[1].Name = "Card Number";
+            dataGridView1.Columns[2].Name = "CVV";
+            dataGridView1.Columns[3].Name = "Order ID";
+
+            string[] row = new string[] { HOLDER, NUM, CVV, ORD };
+            dataGridView1.Rows.Add(row);
+
+            cmd.ExecuteNonQuery();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
