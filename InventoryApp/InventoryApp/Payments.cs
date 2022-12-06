@@ -125,5 +125,39 @@ namespace InventoryApp
             dataGridView1.Rows.Clear();
             data_show();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
+
+            var cmd = new SQLiteCommand(con);
+
+            cmd.CommandText = "DELETE FROM PAYMENT WHERE ordID=@OrderID";
+            cmd.Prepare();
+            cmd.Parameters.AddWithValue("@OrderID", textBox4.Text);
+
+            cmd.ExecuteNonQuery();
+            dataGridView1.Rows.Clear();
+            data_show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
+
+            var cmd = new SQLiteCommand(con);
+
+            cmd.CommandText = "UPDATE PAYMENT Set payCardHolder=@CardHolder, payCardNo=@CardNumber, payCardCVV=@CVV WHERE ordID=@OrderID";
+            cmd.Parameters.AddWithValue("@CardHolder", textBox1.Text);
+            cmd.Parameters.AddWithValue("@CardNumber", textBox2.Text);
+            cmd.Parameters.AddWithValue("@CVV", textBox3.Text);
+            cmd.Parameters.AddWithValue("@OrderID", textBox4.Text);
+
+            cmd.ExecuteNonQuery();
+            dataGridView1.Rows.Clear();
+            data_show();
+        }
     }
 }

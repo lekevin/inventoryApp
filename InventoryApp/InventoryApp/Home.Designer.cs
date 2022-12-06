@@ -176,7 +176,7 @@
             this.prodModel,
             this.prodPrice,
             this.manID});
-            this.productGrid.Location = new System.Drawing.Point(739, 311);
+            this.productGrid.Location = new System.Drawing.Point(739, 329);
             this.productGrid.Name = "productGrid";
             this.productGrid.Size = new System.Drawing.Size(538, 153);
             this.productGrid.TabIndex = 67;
@@ -215,7 +215,7 @@
             this.mName,
             this.mState,
             this.mCategory});
-            this.manGrid.Location = new System.Drawing.Point(788, 470);
+            this.manGrid.Location = new System.Drawing.Point(791, 488);
             this.manGrid.Name = "manGrid";
             this.manGrid.Size = new System.Drawing.Size(443, 120);
             this.manGrid.TabIndex = 68;
@@ -253,7 +253,7 @@
             this.mNameJoin,
             this.mStateJoin,
             this.mCategoryJoin});
-            this.joinView.Location = new System.Drawing.Point(739, 155);
+            this.joinView.Location = new System.Drawing.Point(739, 173);
             this.joinView.Name = "joinView";
             this.joinView.Size = new System.Drawing.Size(538, 150);
             this.joinView.TabIndex = 69;
@@ -306,7 +306,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(942, 106);
+            this.button5.Location = new System.Drawing.Point(942, 115);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(135, 42);
             this.button5.TabIndex = 70;

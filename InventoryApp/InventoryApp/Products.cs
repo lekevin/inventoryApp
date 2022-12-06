@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -71,7 +72,18 @@ namespace InventoryApp
 
         private void button3_Click(object sender, EventArgs e)
         {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
 
+            var cmd = new SQLiteCommand(con);
+
+            cmd.CommandText = "DELETE FROM PRODUCTS WHERE prodID=@ProductID";
+            cmd.Prepare();
+            cmd.Parameters.AddWithValue("@ProductID", textBox1.Text);
+
+            cmd.ExecuteNonQuery();
+            dataGridView1.Rows.Clear();
+            data_show();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -81,7 +93,35 @@ namespace InventoryApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
+            var cmd = new SQLiteCommand(con);
 
+            cmd.CommandText = "INSERT INTO PRODUCTS(prodID, prodType, prodModel, prodPrice, manID) VALUES (@prodID, @prodType, @prodModel, @prodPrice, @manID)";
+
+            string PROID = textBox1.Text;
+            string PROTYPE = textBox2.Text;
+            string PROMOD = textBox3.Text;
+            string PROPRI = textBox4.Text;
+            string MANUID = textBox5.Text;
+
+            cmd.Parameters.AddWithValue("@prodID", PROID);
+            cmd.Parameters.AddWithValue("@prodType", PROTYPE);
+            cmd.Parameters.AddWithValue("@prodModel", PROMOD);
+            cmd.Parameters.AddWithValue("@prodPrice", PROPRI);
+            cmd.Parameters.AddWithValue("@manID", MANUID);
+
+            dataGridView1.ColumnCount = 5;
+            dataGridView1.Columns[0].Name = "ProductID";
+            dataGridView1.Columns[1].Name = "ProductType";
+            dataGridView1.Columns[2].Name = "ProductModel";
+            dataGridView1.Columns[3].Name = "ProductPrice";
+            dataGridView1.Columns[4].Name = "ManufacturerID";
+
+            string[] row = new string[] { PROID, PROTYPE, PROMOD, PROPRI, MANUID };
+            dataGridView1.Rows.Add(row);
+
+            cmd.ExecuteNonQuery();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -121,7 +161,21 @@ namespace InventoryApp
 
         private void button2_Click(object sender, EventArgs e)
         {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
 
+            var cmd = new SQLiteCommand(con);
+
+            cmd.CommandText = "UPDATE PRODUCTS Set prodType=@ProductType, prodModel=@ProductModel, prodPrice=@ProductPrice, manID=@ManufacturerID WHERE prodID=@ProductID";
+            cmd.Parameters.AddWithValue("@ProductID", textBox1.Text);
+            cmd.Parameters.AddWithValue("@ProductType", textBox2.Text);
+            cmd.Parameters.AddWithValue("@ProductModel", textBox3.Text);
+            cmd.Parameters.AddWithValue("@ProductType", textBox4.Text);
+            cmd.Parameters.AddWithValue("@ManufacturerID", textBox5.Text);
+
+            cmd.ExecuteNonQuery();
+            dataGridView1.Rows.Clear();
+            data_show();
         }
 
         private void label9_Click(object sender, EventArgs e)
