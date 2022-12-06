@@ -118,5 +118,10 @@ namespace InventoryApp
         {
 
         }
+
+        private void Products_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
