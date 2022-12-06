@@ -34,7 +34,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,7 +49,15 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.oID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -119,14 +126,6 @@
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
-            this.panel2.Location = new System.Drawing.Point(517, 189);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(793, 446);
-            this.panel2.TabIndex = 42;
             // 
             // button3
             // 
@@ -297,12 +296,58 @@
             this.textBox6.Size = new System.Drawing.Size(323, 21);
             this.textBox6.TabIndex = 51;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.oID,
+            this.oDate,
+            this.oFirstName,
+            this.oLastName,
+            this.oAddress,
+            this.proID});
+            this.dataGridView1.Location = new System.Drawing.Point(580, 173);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(640, 413);
+            this.dataGridView1.TabIndex = 53;
+            // 
+            // oID
+            // 
+            this.oID.HeaderText = "Order ID";
+            this.oID.Name = "oID";
+            // 
+            // oDate
+            // 
+            this.oDate.HeaderText = "Order Date";
+            this.oDate.Name = "oDate";
+            // 
+            // oFirstName
+            // 
+            this.oFirstName.HeaderText = "First Name";
+            this.oFirstName.Name = "oFirstName";
+            // 
+            // oLastName
+            // 
+            this.oLastName.HeaderText = "Last Name";
+            this.oLastName.Name = "oLastName";
+            // 
+            // oAddress
+            // 
+            this.oAddress.HeaderText = "Address";
+            this.oAddress.Name = "oAddress";
+            // 
+            // proID
+            // 
+            this.proID.HeaderText = "Product ID";
+            this.proID.Name = "proID";
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(1345, 670);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label9);
@@ -313,7 +358,6 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -326,8 +370,10 @@
             this.Name = "Orders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orders";
+            this.Load += new System.EventHandler(this.Orders_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,7 +387,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
@@ -357,5 +402,12 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oFirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oLastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn proID;
     }
 }

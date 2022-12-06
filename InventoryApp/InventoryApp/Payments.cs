@@ -14,14 +14,8 @@ namespace InventoryApp
 {
     public partial class Payments : Form
     {
-        //List<Payments> pays = new List<Payments>();
-
-        //string path = "database.db";
-        //string cs = @"URI=file"+Application.StartupPath+"\\database.db";
 
         SQLiteDataReader dr;
-        SQLiteCommand cmd;
-        SQLiteConnection con;
         public Payments()
         {
             InitializeComponent();
@@ -41,6 +35,7 @@ namespace InventoryApp
                 dataGridView1.Rows.Insert(0,dr.GetString(0),dr.GetString(1),dr.GetString(2),dr.GetString(3));
             }
         }
+
         private void label5_Click(object sender, EventArgs e)
         {
             Application.Exit();

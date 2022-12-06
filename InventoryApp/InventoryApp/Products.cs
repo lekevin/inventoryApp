@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,20 @@ namespace InventoryApp
         public Products()
         {
             InitializeComponent();
+        }
+        private void data_show()
+        {
+            var con = new SQLiteConnection(@"URI=file:" + Application.StartupPath + "\\inventory.db");
+            con.Open();
+
+            string stm = "SELECT prodID, prodType, prodModel, prodPrice, manID FROM PRODUCTS";
+            var cmd = new SQLiteCommand(stm, con);
+            SQLiteDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                dataGridView1.Rows.Insert(0, dr.GetString(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4));
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -120,6 +135,11 @@ namespace InventoryApp
         }
 
         private void Products_Load(object sender, EventArgs e)
+        {
+            data_show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

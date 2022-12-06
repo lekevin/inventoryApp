@@ -1,15 +1,3 @@
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe.config
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.pdb
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.AssemblyReference.cache
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.SuggestedBindingRedirects.cache
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Form1.resources
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.cache
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
-C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.ManageUsers.resources
 C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe.config
 C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe
 C:\Users\v47053\OneDrive - Textron\Desktop\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.pdb
@@ -78,3 +66,28 @@ C:\Users\8826t\Documents\GitHub\inventoryApp\InventoryApp\InventoryApp\obj\Debug
 C:\Users\8826t\Documents\GitHub\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.CopyComplete
 C:\Users\8826t\Documents\GitHub\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
 C:\Users\8826t\Documents\GitHub\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\x86\sqlite3.dll
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\x64\sqlite3.dll
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe.config
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.exe
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\InventoryApp.pdb
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\Dapper.dll
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\Dapper.xml
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.AssemblyReference.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Home.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Login.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.ManageUsers.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Manufacturers.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Orders.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Payments.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Products.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Properties.Resources.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.Splashform.resources
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.GenerateResource.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.CoreCompileInputs.cache
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.csproj.CopyComplete
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.exe
+C:\Users\lekev_bcb70q6\Documents\repo\inventoryApp\InventoryApp\InventoryApp\obj\Debug\InventoryApp.pdb
