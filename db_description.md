@@ -45,7 +45,9 @@ primary keys : prodID  mID ordID
 
 foreign keys  : mID  ordID prodID
 
-There are no FDs besides the keys to attributes in every relation
+FDs :
+prodType	->	mID
+mID	->	prodType
  
 All the relations are in 3NF
 
