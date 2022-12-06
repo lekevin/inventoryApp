@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,7 +45,13 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -113,7 +118,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.button4.Cursor = System.Windows.Forms.Cursors.No;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Location = new System.Drawing.Point(97, 647);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(251, 45);
@@ -122,19 +127,11 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
-            this.panel2.Location = new System.Drawing.Point(578, 177);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(710, 492);
-            this.panel2.TabIndex = 27;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(96, 579);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(251, 45);
@@ -146,7 +143,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(97, 516);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(251, 45);
@@ -159,7 +156,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(97, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(251, 45);
@@ -255,12 +252,46 @@
             this.textBox4.Size = new System.Drawing.Size(323, 21);
             this.textBox4.TabIndex = 32;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mID,
+            this.mName,
+            this.mState,
+            this.mCategory});
+            this.dataGridView1.Location = new System.Drawing.Point(715, 199);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(440, 394);
+            this.dataGridView1.TabIndex = 34;
+            // 
+            // mID
+            // 
+            this.mID.HeaderText = "Manufacturer ID";
+            this.mID.Name = "mID";
+            // 
+            // mName
+            // 
+            this.mName.HeaderText = "Manufacturer Name";
+            this.mName.Name = "mName";
+            // 
+            // mState
+            // 
+            this.mState.HeaderText = "Manufacturer State";
+            this.mState.Name = "mState";
+            // 
+            // mCategory
+            // 
+            this.mCategory.HeaderText = "Manufacturer Category";
+            this.mCategory.Name = "mCategory";
+            // 
             // Manufacturers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(1361, 709);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label7);
@@ -268,7 +299,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -280,8 +310,10 @@
             this.Name = "Manufacturers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manufacturers";
+            this.Load += new System.EventHandler(this.Manufacturers_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,7 +327,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -307,5 +338,10 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mState;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mCategory;
     }
 }

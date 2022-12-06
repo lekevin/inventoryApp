@@ -34,7 +34,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,7 +47,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ProdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProdType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProdModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProdPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ManuID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -122,15 +128,6 @@
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(190)))), ((int)(((byte)(197)))));
-            this.panel2.Location = new System.Drawing.Point(485, 166);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(803, 492);
-            this.panel2.TabIndex = 42;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button3
             // 
@@ -291,12 +288,53 @@
             this.textBox5.TabIndex = 49;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProdID,
+            this.ProdType,
+            this.ProdModel,
+            this.ProdPrice,
+            this.ManuID});
+            this.dataGridView1.Location = new System.Drawing.Point(631, 193);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(544, 397);
+            this.dataGridView1.TabIndex = 51;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ProdID
+            // 
+            this.ProdID.HeaderText = "Product ID";
+            this.ProdID.Name = "ProdID";
+            // 
+            // ProdType
+            // 
+            this.ProdType.HeaderText = "Product Type";
+            this.ProdType.Name = "ProdType";
+            // 
+            // ProdModel
+            // 
+            this.ProdModel.HeaderText = "Product Model";
+            this.ProdModel.Name = "ProdModel";
+            // 
+            // ProdPrice
+            // 
+            this.ProdPrice.HeaderText = "Product Price";
+            this.ProdPrice.Name = "ProdPrice";
+            // 
+            // ManuID
+            // 
+            this.ManuID.HeaderText = "Manufacturer ID";
+            this.ManuID.Name = "ManuID";
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(1345, 670);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label8);
@@ -305,7 +343,6 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -321,6 +358,7 @@
             this.Load += new System.EventHandler(this.Products_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,7 +372,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
@@ -348,5 +385,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProdID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProdType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProdModel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProdPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ManuID;
     }
 }
